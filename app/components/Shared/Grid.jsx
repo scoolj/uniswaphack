@@ -1,8 +1,17 @@
 import React from "react";
 
-const Grid = ({ children, cols }) => {
+const Grid = ({ children, cols, justify, gap }) => {
   return (
-    <div className={`grid grid-cols-[${cols}] gap-10`}>{children}</div>
+    <div
+      style={{ 
+        gap: gap, 
+        gridGap: gap,
+        gridColumn: cols,
+        justifyContent: justify }}
+      className={`grid  grid-flow-col  justify-center`}
+    >
+      {children}
+    </div>
   );
 };
 

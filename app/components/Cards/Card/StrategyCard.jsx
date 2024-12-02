@@ -2,7 +2,7 @@ import React from "react";
 import CardLayout from "../CardLayout";
 import Buttons from "../../Shared/Buttons";
 
-const SupportedCard = ({ width, height, bg }) => {
+const StrategyCard = ({ width, height, bg }) => {
   return (
     <CardLayout width={width} height={height} bg={bg}>
       <div
@@ -31,4 +31,4 @@ const SupportedCard = ({ width, height, bg }) => {
   );
 };
 
-export default SupportedCard;
+export default StrategyCard;
