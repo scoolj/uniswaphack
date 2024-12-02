@@ -4,6 +4,8 @@ import SubTitle from "../Shared/SubTitle";
 import SupportedCard from "../Cards/Card/SupportedCard";
 import MarginBottom from "../Shared/MarginBottom";
 import Grid from "../Shared/Grid";
+import Banner from "../Banner";
+import Content from "../Content";
 
 
 
@@ -17,13 +19,28 @@ const SupportedSection = () => {
       <MarginBottom gap="10rem" />
       <Grid
         cols="2"
+        gap="1rem"
+        justify="space-around"
         children={
           <>
-            <SupportedCard />
-            <SupportedCard />
+            <SupportedCard width="30rem" height="20rem" bg="#1F211C" />
+            <SupportedCard width="30rem" height="20rem" bg="#1F211C" />
           </>
         }
       ></Grid>
+
+      <MarginBottom gap="6rem" />
+      <Banner width="100%" height="20rem" bg="#1F211C" />
+      <MarginBottom gap="10rem" />
+
+
+      <Grid
+        cols="1"
+        children={
+          <Content />
+        }>
+        
+      </Grid>
     </div>
   );
 };
